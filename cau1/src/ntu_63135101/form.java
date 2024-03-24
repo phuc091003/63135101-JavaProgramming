@@ -10,7 +10,7 @@ public class form extends JFrame implements ActionListener{
 	private JTextField feetTextField;
 	
 	public form() {
-		setTitle("Chuyển đổi đơn vị đo mét sang feet");
+		setTitle("Chuyển đổi đơn vị đo");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setResizable(false);
 		
@@ -24,7 +24,6 @@ public class form extends JFrame implements ActionListener{
 		
 		JLabel feetLabel = new JLabel("Feet: ");
 		feetTextField = new JTextField(10);
-		feetTextField.setEditable(false);
 		
 		JButton toFeetButton = new JButton("Mét sang Feet");
 		toFeetButton.addActionListener(this);
@@ -40,7 +39,7 @@ public class form extends JFrame implements ActionListener{
 		
 		constraints.gridx = 0;
 		constraints.gridy = 1;
-		panel.add(feetTextField, constraints);
+		panel.add(feetLabel, constraints);
 		
 		constraints.gridx = 1;
 		panel.add(feetTextField, constraints);
@@ -88,10 +87,11 @@ public class form extends JFrame implements ActionListener{
 	
 	
 	public static void main (String[] args) {
-		SwingUtilities.invokeLater(new Runnable()){
+		SwingUtilities.invokeLater(new Runnable(){
 			public void run() {
-				
+				form app = new form();
+				app.showform();
 			}
-		}
+		});
 	}
 }

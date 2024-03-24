@@ -30,5 +30,31 @@ public class form extends JFrame implements ActionListener{
 		toFeetButton.addActionListener(this);
 		JButton toMeterButton = new JButton("Feet sang Mét");
 		toMeterButton.addActionListener(this);
+		
+		constraints.gridx = 0;
+		constraints.gridy = 0;
+		panel.add(meterLabel, constraints);
+		
+		constraints.gridx = 1;
+		panel.add(meterTextField, constraints);
+		
+		constraints.gridx = 0;
+		constraints.gridy = 1;
+		panel.add(feetTextField, constraints);
+		
+		constraints.gridx = 1;
+		panel.add(feetTextField, constraints);
+		
+		constraints.gridx = 0;
+		constraints.gridy = 2;
+		panel.add(toFeetButton, constraints);
+		
+		constraints.gridx = 1;
+		panel.add(toMeterButton, constraints);
+		
+		add(panel);
+		pack();
+		setLocationRelativeTo(null);
 	}
+	
 }

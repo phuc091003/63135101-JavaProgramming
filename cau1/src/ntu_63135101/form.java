@@ -56,5 +56,20 @@ public class form extends JFrame implements ActionListener{
 		pack();
 		setLocationRelativeTo(null);
 	}
+	public void actionPerformed(ActionEvent e) {
+		if(e.getActionCommand().equals("Mét sang Feet")) {
+			convertToFeet();
+		}else if(e.getActionCommand().equals("Feet sang Mét")) {
+			convertToMeter();
+		}
+	}
 	
+	
+	public static void main (String[] args) {
+		SwingUtilities.invokeLater(new Runnable()){
+			public void run() {
+				
+			}
+		}
+	}
 }

@@ -72,8 +72,18 @@ public class form extends JFrame implements ActionListener{
 		} catch(NumberFormatException ex) {
 			JOptionPane.showMessageDialog(this, "Giá trị không hợp lệ!");;
 		}
-		
 	}
+	public void convertToMeter() {
+		try {
+			double feet = Double.parseDouble(feetTextField.getText());
+			double meter = feet /3.28084;
+			meterTextField.setText(String.format("%.2f",meter));
+		} catch(NumberFormatException ex) {
+			JOptionPane.showMessageDialog(this, "Giá trị không hợp lệ!");;
+		}
+	}
+	
+	
 	public static void main (String[] args) {
 		SwingUtilities.invokeLater(new Runnable()){
 			public void run() {

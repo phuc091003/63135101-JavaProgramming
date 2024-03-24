@@ -10,7 +10,7 @@ public class form extends JFrame implements ActionListener{
 	private JTextField feetTextField;
 	
 	public form() {
-		setTitle("Chuyển đổi đơn vị đo");
+		setTitle("Chuyển đổi đơn vị đo mét sang feet");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setResizable(false);
 		
@@ -18,5 +18,12 @@ public class form extends JFrame implements ActionListener{
 		panel.setLayout(new GridBagLayout());
 		GridBagConstraints constraints = new GridBagConstraints();
 		constraints.insets = new Insets(30,30,30,30);
+		
+		JLabel meterLabel = new JLabel("Mét: ");
+		meterTextField = new JTextField(10);
+		
+		JLabel feetLabel = new JLabel("Feet: ");
+		feetTextField = new JTextField(10);
+		feetTextField.setEditable(false);
 	}
 }

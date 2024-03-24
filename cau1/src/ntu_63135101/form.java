@@ -82,6 +82,9 @@ public class form extends JFrame implements ActionListener{
 			JOptionPane.showMessageDialog(this, "Giá trị không hợp lệ!");;
 		}
 	}
+	public void showform() {
+		setVisible(true);
+	}
 	
 	
 	public static void main (String[] args) {

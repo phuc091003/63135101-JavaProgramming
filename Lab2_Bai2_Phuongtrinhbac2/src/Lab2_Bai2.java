@@ -10,6 +10,22 @@ public class Lab2_Bai2 {
 		double b = scanner.nextDouble();
 		System.out.print("Nhap he so c: ");
 		double c = scanner.nextDouble();
+		
+		if(a==0) {
+			//Giai phuong trinh bac nhat
+			if(b==0) {
+				if(c==0) {
+					System.out.println("Phuong trinh co vo so nghiem.");
+				}else {
+					System.out.println("Phuong trinh vo nghiem.");
+				}
+			}else {
+				double x = -c/b;
+				System.out.println("Nghiem cua phuong trinh la : "+x);
+			}
+		} else {
+			
+		}
 
 	}
 

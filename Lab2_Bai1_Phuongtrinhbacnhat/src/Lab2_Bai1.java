@@ -15,7 +15,11 @@ public class Lab2_Bai1 {
 			}else {
 				System.out.println("Phuong trinh vo nghiem");
 			}
+		}else {
+			double x = -b/a;
+			System.out.println("Nghiem cua phuong trinh la: x = "+x);
 		}
+		scanner.close();
 
 	}
 
